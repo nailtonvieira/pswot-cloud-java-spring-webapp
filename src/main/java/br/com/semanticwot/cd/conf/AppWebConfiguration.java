@@ -160,6 +160,8 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter{
         return new CustomXMLViewResolver(marshaller);
     }
     
+    // Vou descobrir, estudando injeção de dependencias porque isso é errado e por que 
+    // isso funcionou
     @Bean
     public JavaMailSenderImpl mailSender() { // para consegui fazer a injeção automática
 
